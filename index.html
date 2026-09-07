@@ -35,7 +35,8 @@
 
 /* ============ HERO ============ */
   .hero{ position:relative; background:linear-gradient(155deg, #FFFFFF 0%, #FBEEE8 100%); overflow:hidden; padding:64px 0; border-bottom:1px solid var(--line); }
-  .hero-grid{ display:grid; grid-template-columns:1.3fr 0.85fr; gap:24px; align-items:center; }
+  .hero .container{ max-width:1140px; margin:0 auto; padding-inline:24px; }
+  .hero-grid{ display:grid; grid-template-columns:1.15fr 1fr; gap:40px; align-items:center; max-width:1140px; margin:0 auto; }
   .hero-copy h1{ font-size:clamp(28px,3.9vw,44px); line-height:1.2; font-weight:700; color:var(--navy); }
   .hero-copy p{ color:var(--ink-soft); font-size:16.5px; line-height:1.75; max-width:100%; margin-top:20px; }
   .hero-copy p.agitation{ color:var(--ink-soft); }
@@ -46,9 +47,9 @@
   }
   .hero-copy .pillar-line{ font-family:'Fraunces',serif; font-weight:600; font-size:21px; color:var(--orange-deep); margin-top:24px; }
   .hero-copy .btn{ margin-top:30px; }
-  .hero-photo{ position:relative; display:flex; justify-content:flex-end; align-items:flex-start; margin-top:-60px; }
-  .hero-photo img{ position:relative; z-index:1; width:100%; max-width:340px; height:auto; object-fit:contain; border-radius:14px 14px 60px 60px / 14px 14px 40px 40px; display:block; }
-  .cred-strip{ display:flex; gap:0; margin-top:38px; border-top:1px solid var(--line); padding-top:26px; }
+  .hero-photo{ position:relative; display:flex; justify-content:center; align-items:center; margin-top:0; }
+  .hero-photo img{ position:relative; z-index:1; width:100%; max-width:380px; height:auto; object-fit:contain; border-radius:14px 14px 60px 60px / 14px 14px 40px 40px; display:block; }
+  .cred-strip{ display:flex; gap:0; margin-top:38px; border-top:1px solid var(--line); padding-top:26px; max-width:1140px; margin-inline:auto; }
   .cred-item{ flex:1; padding-inline-end:24px; border-inline-end:1px solid var(--line); margin-inline-end:24px; }
   .cred-item:last-child{ border-inline-end:none; margin-inline-end:0; padding-inline-end:0; }
   .cred-item .num{ font-family:'Fraunces',serif; font-weight:700; font-size:28px; color:var(--orange-deep); line-height:1; }
